@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: `%s | ${site.shortName}`,
   },
   description:
-    "A public portfolio case study showing how a B2B service firm can become easier to discover, understand, trust, and contact across Google Search and AI answer engines.",
+    "A real AI Search, AEO, and GEO project framework for B2B service firms. Portfolio case study by Rajesh Kumar.",
   keywords: [
     "AI search readiness",
     "AEO",
