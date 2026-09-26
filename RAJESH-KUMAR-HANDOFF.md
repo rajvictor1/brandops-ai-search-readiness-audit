@@ -7,7 +7,20 @@
 - **Local folder:** `/Users/mac/Desktop/brandops-ai-search-readiness-audit`
 - **Stack:** Next.js 16.3.6, TypeScript, Tailwind CSS v4, shadcn/ui (Base UI), schema-dts, lucide-react
 - **Export:** Static export to `dist/`
-- **Vercel project:** `homeo-clinic/brandops-ai-search-readiness-audit`
+- **Verified LinkedIn:** https://www.linkedin.com/in/rajesh-demand-gen-gtm-expert/ (supplied by Rajesh on 2026-09-26)
+- **Contact form:** demonstration only, no backend/analytics/APIs/secrets
+
+## Changes made in this revision
+
+1. Added "My Contribution" to top navigation and mobile menu.
+2. Added homepage section "What Rajesh Personally Contributed" with six cards.
+3. Strengthened homepage framing: clearly labeled as a real project framework, not a claim of achieved rankings or revenue.
+4. Added `PLAN.md` to repository root.
+5. Revised testing prompts: 8 neutral high-intent buyer questions in main matrix; BrandOps-specific prompts moved to a separate "Brand / entity accuracy check" table.
+6. Softened AEO claims: FAQ schema and comparison tables are now framed as "may support" and "hypothesis to test" rather than guarantees of rich results, citations, or People Also Ask.
+7. Verified LinkedIn URL updated to the value supplied by Rajesh.
+8. Contact form labeled "demonstration only" and explicitly states no data leaves the page.
+9. Added `dist/` to ESLint ignores.
 
 ## User preferences applied
 
