@@ -1,0 +1,16 @@
+import { MetadataRoute } from "next";
+
+export const dynamic = "force-static";
+
+export default function manifest(): MetadataRoute.Manifest {
+  return {
+    name: "BrandOps AI Search Readiness Audit",
+    short_name: "BrandOps AI Audit",
+    description:
+      "Portfolio case study on AI search readiness, AEO, and GEO for B2B service firms.",
+    start_url: "/",
+    display: "standalone",
+    background_color: "#ffffff",
+    theme_color: "#171717",
+  };
+}
