@@ -19,9 +19,12 @@ export function ContactForm() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="text-lg">Audit request form</CardTitle>
+        <CardTitle className="text-lg">Audit request form (demonstration only)</CardTitle>
       </CardHeader>
       <CardContent>
+        <p className="mb-4 text-sm text-muted-foreground">
+          This form does not submit to a backend, analytics service, or API. No data leaves this page.
+        </p>
         {submitted ? (
           <div className="rounded-lg bg-muted p-6 text-center">
             <p className="font-medium">Thank you for your interest.</p>

@@ -7,7 +7,7 @@ import { site } from "@/lib/site-data";
 export const metadata: Metadata = {
   title: "Request an Audit",
   description:
-    "Request a BrandOps AI Search Readiness audit. No submissions are sent automatically; this is a portfolio demonstration page.",
+    "Request a BrandOps AI Search Readiness audit. The form is for demonstration only; no submissions are sent.",
   alternates: { canonical: `${site.url}/contact` },
 };
 
@@ -18,7 +18,7 @@ export default function ContactPage() {
         <Badge variant="secondary" className="mb-4">Contact</Badge>
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">Request an AI Search Readiness Audit</h1>
         <p className="mt-6 text-lg text-muted-foreground">
-          This is a portfolio demonstration page. The form below does not submit to a backend. To request a real audit, email{" "}
+          This is a portfolio demonstration page. The form below does not submit to a backend, analytics service, or API. To request a real audit, email{" "}
           <a href={`mailto:${site.email}`} className="underline">{site.email}</a>.
         </p>
 

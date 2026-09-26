@@ -2,12 +2,12 @@ import { Metadata } from "next";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { LinkButton } from "@/components/link-button";
-import { measurementLayers, promptMatrix, site, evidenceLabels } from "@/lib/site-data";
+import { promptMatrix, brandPrompts, measurementLayers, site, evidenceLabels } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Testing & Measurement",
   description:
-    "The 4-layer measurement model and 8-prompt testing matrix for the BrandOps AI Search Readiness project.",
+    "The 4-layer measurement model and prompt testing matrix for the BrandOps AI Search Readiness project.",
   alternates: { canonical: `${site.url}/testing` },
 };
 
@@ -48,7 +48,7 @@ export default function TestingPage() {
         </section>
 
         <section className="mt-16">
-          <h2 className="text-2xl font-semibold">8-prompt testing matrix</h2>
+          <h2 className="text-2xl font-semibold">Main test set: neutral high-intent buyer questions</h2>
           <p className="mt-2 text-muted-foreground">
             Each prompt is run on ChatGPT, Perplexity, and Gemini. Each run is repeated three times on separate days. We record whether BrandOps is mentioned, whether it is cited or linked, what sources appear, and whether the description is accurate.
           </p>
@@ -70,6 +70,37 @@ export default function TestingPage() {
                     <td className="py-4 pr-4 text-muted-foreground">{row.platforms.join(", ")}</td>
                     <td className="py-4">
                       <Badge variant="secondary">{row.intent}</Badge>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section className="mt-16">
+          <h2 className="text-2xl font-semibold">Brand / entity accuracy check</h2>
+          <p className="mt-2 text-muted-foreground">
+            Kept separate from the neutral buyer-question set so we can judge factual accuracy about BrandOps without biasing the main discovery test.
+          </p>
+          <div className="mt-8 overflow-x-auto">
+            <table className="w-full min-w-[700px] border-collapse text-sm">
+              <thead>
+                <tr className="border-b border-border">
+                  <th className="py-3 pr-4 text-left font-semibold">ID</th>
+                  <th className="py-3 pr-4 text-left font-semibold">Prompt</th>
+                  <th className="py-3 pr-4 text-left font-semibold">Platforms</th>
+                  <th className="py-3 text-left font-semibold">Intent</th>
+                </tr>
+              </thead>
+              <tbody>
+                {brandPrompts.map((row) => (
+                  <tr key={row.id} className="border-b border-border/50">
+                    <td className="py-4 pr-4 font-mono text-xs">{row.id}</td>
+                    <td className="py-4 pr-4 text-muted-foreground">{row.prompt}</td>
+                    <td className="py-4 pr-4 text-muted-foreground">{row.platforms.join(", ")}</td>
+                    <td className="py-4">
+                      <Badge variant="outline">{row.intent}</Badge>
                     </td>
                   </tr>
                 ))}

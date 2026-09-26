@@ -62,7 +62,7 @@ export default function AeoPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Mark up concise Q&A blocks with FAQPage schema so they are eligible for rich results and AI summaries.
+                  Marking up concise Q&A blocks with FAQPage schema may support eligibility for rich results and AI summaries. This is a hypothesis to test, not a guarantee.
                 </p>
               </CardContent>
             </Card>
@@ -72,7 +72,7 @@ export default function AeoPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Help buyers evaluate options side by side. Tables are easy for AI engines to parse and cite.
+                  Help buyers evaluate options side by side. Tables may be easier for AI engines to parse and cite; this is a hypothesis to test.
                 </p>
               </CardContent>
             </Card>
@@ -83,7 +83,7 @@ export default function AeoPage() {
           <Badge variant="outline" className="mb-4">Planned Guide</Badge>
           <h2 className="text-2xl font-semibold">SEO vs AEO vs GEO for B2B Service Firms</h2>
           <p className="mt-4 text-muted-foreground">
-            A practical guide that defines each discipline, shows where they overlap, and gives a B2B service firm a concrete checklist. It targets the comparison stage of the buyer journey and is designed to earn featured snippets, People Also Ask placements, and AI citations.
+            A practical guide that defines each discipline, shows where they overlap, and gives a B2B service firm a concrete checklist. It targets the comparison stage of the buyer journey and is a hypothesis to test for earning featured snippets, People Also Ask placements, and AI citations. None of those outcomes are guaranteed.
           </p>
           <p className="mt-4 text-sm text-muted-foreground">
             {evidenceLabels.planned}
