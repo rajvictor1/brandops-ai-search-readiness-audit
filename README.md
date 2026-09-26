@@ -8,7 +8,7 @@ This site demonstrates a real AI Search, AEO, and GEO strategy for BrandOps. It 
 
 ## Live URL
 
-- Production: `https://brandops-ai-search-readiness-audit.vercel.app` (after approval)
+- Preview / Production (awaiting explicit approval): `https://brandops-ai-search-readiness-audit.vercel.app`
 - Repository: `https://github.com/rajvictor1/brandops-ai-search-readiness-audit`
 
 ## Pages
